@@ -30,18 +30,14 @@ Product.init(
       validate: {
         isInt: true,
       },
-
     },
     category_id: {
       types: DataTypes.INTEGER,
       references: {
         model: "category",
         key: "id",
-,      }
-
-    }
-
-    
+      },
+    },
   },
   {
     sequelize,
